@@ -2,7 +2,7 @@ from ctypes import *
 # import os       --> Ako koristimo drugi nacin za odredjivanje putanje potrebno je importovati
 # import ctypes   --> Ako koristimo drugi nacin za odredjivanje putanje potrebno je importovati
 
-so_file = "/Users/Stefan/Desktop/C pokrenut u Pajtonu/C-program.so" #definiste svoju putanju na vasem racunaru
+so_file = "/VasaPutanja/C pokrenut u Pajtonu/C-program.so" #definiste svoju putanju na vasem racunaru
 
 #Drugi nacin definisanja putanje: 
 """
