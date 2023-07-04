@@ -1,6 +1,6 @@
 from ctypes import *
-# import os       --> Ako koristimo drugi nacin za odredjivanje putanje potrebno je importovati
-# import ctypes   --> Ako koristimo drugi nacin za odredjivanje putanje potrebno je importovati
+# import os    --> Ako koristimo drugi nacin za odredjivanje putanje potrebno je importovati
+
 
 #Prvi nacin definisanja putanje:
 so_file = "/Users/PutanjaDoDatoteke/C pokrenut u Pajtonu/C-program.so" #definiste svoju putanju na vasem racunaru
@@ -10,7 +10,7 @@ osnovna_funkcija = CDLL(so_file)
 """
 trenutna_putanja = os.path.abspath(os.path.dirname(__file__))
 putanja_do_izvrsne_datoteke = os.path.join(trenutna_putanja, 'C-program.so')
-osnovna_funkcija = ctypes.CDLL(putanja_do_izvrsne_datoteke)
+osnovna_funkcija = CDLL(putanja_do_izvrsne_datoteke)
 """
 
 print("Tip: ",type(osnovna_funkcija))
